@@ -1,4 +1,6 @@
 import math
+from mymath import math1 as m
+
 class Person:
     def __init__(self, id: int, name: str) -> None:
         self.id = id
@@ -23,6 +25,7 @@ class Person:
     
 
 leo = Person(1, "Leonardo Zeaiter")
-print(dir(leo))
-leo.add(1, 2)
-help(leo.add)
+
+print(leo.add(1,2))
+
+print(m.subtract(6,5))
